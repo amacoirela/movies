@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- tutaj linkujemy stylesheety (CSS) -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- end -->
+
+<head>
+    <h1>My Series Database</h1>
+    <script src="script.js"></script> <!-- tutaj linkujemy skrypt z JS -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2>My favorite series to watch</h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="column">
+                            <h3>Title, Year (Actors)</h3>
+                            <ul id="Lista">
+                                <li><input type="checkbox"> Lost, 2024 (Matthew Fox, Evangeline Lilly)</li>
+                                <li><input type="checkbox"> Black Mirror, 2016 (many)</li>
+                                <li><input type="checkbox"> Friends, 1994 (Jennifer Anniston, Matthew Perry)</li>
+                            </ul>
+                            <button onclick="deleteMovie()"><i class="fa-solid fa-trash"></i> Delete</button>
+                        </div>
+                        <div class="column">
+                            <h4>Add Series</h4>
+                            Title:<input id="inputTitle" type="text">
+                            Year:<input id="inputYear" type="text">
+                            Actors:<input id="inputActors" type="text">
+                            <button onclick="addMovie()"><i class="fa-solid fa-file-circle-plus"> Add</i></button>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>2024, My Series Database, All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
